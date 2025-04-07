@@ -7,7 +7,7 @@
   <!-- Add Roboto font -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-face/a/a/roboto/roboto.css" rel="stylesheet">
   <!-- Import external CSS file -->
-  <link rel="stylesheet" href="../css/pages/candidate-description.css">
+  <link rel="stylesheet" href="candidate-description.css">
 </head>
 <body>
   <div class="page-wrapper" data-component="page-wrapper">
@@ -128,7 +128,35 @@
   </div>
 
   <!-- Import JavaScript scripts -->
-  <script src="../js/components/collapsible.js"></script>
-  <script src="../js/pages/candidate-description.js"></script>
+  <script src="collapsible.js"></script>
+  <script src="candidate-description.js"></script>
+
+
+<!-- Popup Overlay -->
+<div id="popup-overlay" class="popup-overlay">
+  <div class="popup-window">
+    <span class="popup-close" id="close-popup-btn">&times;</span>
+    <div class="popup-box">
+      <div class="popup-title">Recategorise Candidate?</div>
+      <div class="popup-content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
+      </div>
+    </div>
+    <div class="select-wrapper">
+      <div class="custom-select">
+        <div class="selected-option">
+          <span>Select an Award</span>
+          <span class="dropdown-icon">&#9662;</span> 
+        </div>
+        <div class="options-list hidden">
+          <div class="option">Category A</div>
+          <div class="option">Category B</div>
+          <div class="option">Category C</div>
+        </div>
+      </div>
+    </div>    
+  </div>
+</div>
+
 </body>
 </html>
